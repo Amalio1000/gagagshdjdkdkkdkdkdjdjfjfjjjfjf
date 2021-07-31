@@ -1,0 +1,41 @@
+/*Remove the margin from the browser*/
+
+body{
+    background: url(/assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Tourney', sans-serif;
+    font-weight: 900;
+    
+}
+
+#responsive-canvas { width: 100%; }
+
+#modal{
+    background: rgb(255, 162, 255);
+    font-weight: 900;
+}
+
+#startGameBtn{
+    font-weight: 900;
+}
+
+#title{
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 1440px){
+    body{
+        background-size: cover;
+        
+    }
+}
+
+
+
+
+
+
+
