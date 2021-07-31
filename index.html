@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Entrar</title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" /> 
+    <link rel="stylesheet" href="login.css">
+</head>
+<body> 
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="circle"></div>
+                <header class="myHed text-center">
+                    <i class="far fa-user"></i>
+                    <p>LOGIN</p>
+                </header>
+                <form class="main-form text-center">
+                    <div class="form-group my-0">
+                        <label class="my-0">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="username" class="myInput" placeholder="Usuario"> 
+                        </label>
+                    </div>
+                    <div class="form-group my-0">
+                        <label class="my-0">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" class="myInput" placeholder="Contraseña"> 
+                        </label>
+                    </div>
+                    <label class="check_1">
+                        <input type="checkbox" checked>
+                        Remember Me
+                    </label>
+                    <div class="form-group">
+                        <label> 
+                            <button type="button" onclick="getInfo()" class="form-control button" value="LOGIN">Entrar</button>
+                        </label>
+                    </div>
+                    <span class="check_1">Forget Password</span>
+                </form>
+            </div>
+        </div>
+    </div>
+     
+
+	<script src="login.js"></script>
+	<div class="lastof"></div>
+</body>
+</html>
