@@ -1,0 +1,75 @@
+@import "compass/css3";
+
+@font-face {
+    font-family: harbor;
+    src: url('https://siasky.net/RAAeQWxDSnDlcJO6lfYTOiw0iycCl0dkVsQ_BFTiVuNlzw') format('truetype');
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0;
+}
+body {
+  background-image:rgb(169,173,185) ;
+}
+
+section{
+  width: 100%;
+  margin: 5% auto;
+  background: rgb(169,173,185);
+  padding: 5%;
+  height: 40vh;
+  
+  align-items: center;
+}
+
+button{
+  border: 3px solid #222;
+  background: transparent;
+  overflow: hidden;  
+  position: relative;
+  
+  height: 35vh ;
+  
+  width: 100%;
+  outline: none;
+}
+  span{
+    font-family: harbor, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3.7em;
+    color: #222;
+    
+    display: block; 
+    user-select: none;
+    position: relative;
+    overflow: auto;
+    padding: 20px;
+    
+    
+}
+span:hover{
+  cursor: pointer;
+ animation: effect 0.65s linear;
+}
+  
+
+
+@keyframes effect{
+  0%{
+    opacity: 1;
+    transform: scale(0.5);
+  }
+50%{
+    opacity: 0.5; 
+    transform: scale(2.5);
+    color: navy;
+  }
+ 100%{
+    opacity: 0; 
+    transform: scale(5);
+    color: navy;
+  }
+}

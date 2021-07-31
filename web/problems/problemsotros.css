@@ -1,0 +1,70 @@
+*  {
+  margin: 0;
+  padding: 3px;
+  color: rgb(255,210,166);
+}
+body {
+  background-color: rgb(26,32,44);
+  width: 100%;
+}
+header {
+  width: 100vw;
+  font-size: 4vw;
+  text-align: center;
+  color: white;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+nav a {
+  padding: 10px;
+  margin: 10px;
+}
+#randombutr{
+  width: 50vw;
+  position: relative;
+  left: 25vw;
+  background-color: black;
+}
+.arribabutr button {
+  position: fixed;
+  border: 1.5px dashed rgb(233,75,30);
+  width: 13vw;
+  right: 15vw;
+  bottom: 5vw;
+  background-color:rgba(60,75,90,0.8) ;
+ 
+}
+#randomgh {
+  color: rgb(255,210,165) ;
+  position: relative;
+  left: 5vw;
+}
+article {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(61,70,87);
+  max-width: 355px;
+}
+article h2 {
+  text-align: center;
+  color: rgb(210,180,150);
+  
+}
+li {
+  margin: 8px;
+  padding: 0px;
+}
+aside {
+  display: flex;
+flex-direction: column;
+}
+.arculos  {
+  display: flex;
+  flex-wrap: wrap;
+}
+button {
+  border-color: rgb(233,75,30);
+}
