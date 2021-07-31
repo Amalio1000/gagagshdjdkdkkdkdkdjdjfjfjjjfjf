@@ -1,0 +1,132 @@
+@font-face {
+    font-family: bebas;
+    src: url('Bebas-Regular.ttf') format('truetype')
+}
+
+* {
+				padding: 0;
+				margin: 0;
+}
+body {
+				background-color: rgb(162,163,165);
+}
+header h1 {
+				display: flex;
+				align-items: top;
+				justify-content: center;
+				background-color: #fff;
+				height: 20vh;
+				width: 100vw;
+				color: #98190b;
+				
+}
+.series {
+font-family: 'bebas' ;
+				font-size: 30vw;
+				color:rgb(240,50,50);
+       
+}
+.grid {
+  width: 100vw;
+  height: auto;
+  
+}
+.grid > .grid-container {
+  background-color: transparent;
+  display: grid;
+  grid-template-rows: repeat(4 , 40px) ;
+ grid-template-columns: repeat(4 , 13vh);
+ grid-gap: .5px;
+ text-align: center;
+ align-items: top;
+ justify-content: top;
+  
+}
+/*Contenido*/
+.conteind {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper{
+  height: 400px;
+  width: 320px;
+  position: relative;
+  transform-style: preserve-3d;
+	perspective: 1000px;
+}
+.wrapper .card{
+  position: absolute;
+  height: 85%;
+  width: 85%;
+  padding: 5px;
+  margin-left: 40px;
+  background: rgb(185,180,180);
+  border-radius: 10px;
+  transform: translateY(0deg);
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+}
+.wrapper:hover > .front-face{
+  transform: rotateY(-180deg);
+}
+.wrapper .card img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.wrapper .back-face{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  transform: rotateY(180deg);
+}
+.wrapper:hover > .back-face{
+  transform: rotateY(0deg);
+}
+.wrapper .back-face img{
+  height: 100px;
+  width: 100px;
+  padding: 5px;
+  border-radius: 5%;
+  background: linear-gradient(375deg, #1cc7d0, #2ede98);
+}
+.wrapper .back-face .info{
+  text-align: center;
+}
+.back-face .info .title{
+  font-size: 30px;
+  font-weight: 500;
+}
+.back-face ul{
+  display: flex;
+}
+.back-face ul a{
+  display: block;
+  height: 40px;
+  width: 40px;
+  color: rgb(222,222,222);
+  text-align: center;
+  margin: 0 5px;
+  line-height: 38px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background: linear-gradient(375deg, rgb(101,177,180),rgb(112,174,149));
+  transition: all 0.5s ease;
+}
+.back-face ul a:hover{
+  color: #1cc7d0;
+  border-color: rgb(28,199,208);
+  background: linear-gradient(375deg, transparent, transparent);
+}
+.vokv button {
+  position: fixed;
+  border: 2px solid #333;
+  border-radius: 25px;
+  z-index: 100000;
+  bottom : 5%;
+  right: 5%;
+}
