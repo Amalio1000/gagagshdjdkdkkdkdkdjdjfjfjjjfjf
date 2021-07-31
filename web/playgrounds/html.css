@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+body {
+/*background: rgb(89,88,83);*/
+background: linear-gradient(165deg, rgba(89,88,83,1) 0%, rgba(42,41,39,1) 55%);
+background-repeat: no-repeat;
+
+background-attachment:fixed;
+
+}
+
+button {
+  position: relative;
+  left: 25vw;
+  top: 2vh;
+  width: 35vw ;
+  height: 20vh;
+  margin: 4.8vh;
+background: linear-gradient(165deg, #151515 0%,rgba(42,41,39,1) 40%, rgba(89,88,83,1) 95%);
+border-radius: 200px;
+border-style: solid ;
+border-color: rgba(158,154,141,0.5) ;
+border-width: 0px;
+box-shadow: -5px -13px 30px -20px rgb(158,154,141),3px 7px 11px 1px #151515;
+color: #B7B3A6;
+font-size: 5vw;
+}
+button:active {
+  animation: 1s holi;
+}
+@keyframes holi {
+
+  0%{
+box-shadow: inset 0px 0px 15px 3px #151515;
+  }
+  100%{
+box-shadow: -5px -13px 30px -20px rgb(158,154,141),3px 7px 11px 1px #151515;
+  }
+}
+p {
+  
+  position: absolute;
+  top: 5vh;
+  left: 10vw;
+  color: #B7B3A6;
+}
+
