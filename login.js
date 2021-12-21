@@ -14,7 +14,11 @@ var objPeople = [
 	{ // Object @ 2 index
 		username: "maria",
 		password: "termure"
-	}
+	},
+        { // Object @ 3 index
+		username: "esther",
+		password: "esther"
+	} 
 
 ]
 
